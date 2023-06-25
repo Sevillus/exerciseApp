@@ -1,25 +1,17 @@
 
 import "./CalculatorForm.css"
-import {exercises} from "../../src/data/exercises.json"
-
-
-const text='deadlift'
-const getExercise = () =>{
-    exercises.forEach(el =>{
-        if(el.name.toLowerCase().indexOf(text) !== -1){
-            console.log(el.name)
-        }else{
-
-        }
-    })
-}
+import {Box} from "@mui/material";
+import ExerciseSearch from "./ExerciseSearch.jsx";
 
 
 const CalculatorForm = () =>{
+
+
     return(
-        <>
-            <button onClick={getExercise}></button>
-        </>
+            <Box>
+              <ExerciseSearch />
+            </Box>
+
     )
 }
 
